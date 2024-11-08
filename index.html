@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,14 @@
     <!-- css file link here  -->
      <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="bg-white dark:bg-gray-900">
     <!-- header section start  -->
-    <header class="flex justify-between px-10 items-center pt-4">
-        <div>
-            <img src="pictures/logo.png" alt="logo">
+    <header class="flex md:flex-row flex-col  md:justify-between  md:px-10 items-center pt-4">
+        <div class="text-center">
+            <img class="dark:text-white" src="pictures/logo.png" alt="logo">
         </div>
         <div>
-            <ul class="flex gap-8">
+            <ul class="flex gap-3 flex-col md:flex-row  md:gap-8 pe-5 dark:text-white">
                 <li>Home</li>
                 <li>About Us</li>
                 <li class="text-[#F44335]">Upskill</li>
@@ -23,24 +23,26 @@
         </div>
         <div class="flex gap-3 items-center">
             <button class="bg-[#F44335] text-white px-3 py-2 rounded-md">Register Interest</button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-            </svg>
+            <button id="switch">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:text-white hover:scale-105 transition">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+            </button>
               
         </div>
     </header>
     <!-- header section end  -->
 
     <!-- banner section start  -->
-     <section class="container mx-auto grid grid-cols-12 pt-8 gap-32 bg-[#FAFAFA]">
+     <section class="container mx-auto grid grid-cols-12 pt-8 gap-32 bg-[#FAFAFA] px-4">
         <div class="col-span-12 md:col-span-6">
             <h4 class="font-bold">Discover<span class="text-[#F44335]">-</span>Interact<span class="text-[#F44335]">-</span>Engage </h4>
 
-            <h1 class="text-5xl font-bold leading-snug">Google<br><span class="text-[#F44335] border-b-2 border-[#F44335]">IT Support</span><br>Certificate</h1>
+            <h1 class="text-3xl ps-20 md:ps-0 md:text-5xl font-bold leading-snug">Google<br><span class="text-[#F44335] border-b-2 border-[#F44335]">IT Support</span><br>Certificate</h1>
 
-            <p class="py-8">This is your path to a career in IT. In this program, you’ll learn in- <br> demand skills with no degree or experience required. </p>
+            <p class="py-8 p-2">This is your path to a career in IT. In this program, you’ll learn in- <br> demand skills with no degree or experience required. </p>
 
-            <div class="flex gap-6">
+            <div class="flex gap-2 md:gap-6">
                 <div class="flex flex-col items-center">
                     <p class="text-[#00FF84] font-bold">438</p>
                     <p>Videos</p>
@@ -68,45 +70,57 @@
                 <button class="bg-white px-4 py-2 shadow rounded-md">Learn more</button>
             </div>
         </div>
-
-        <div class="col-span-12 md:col-span-6">
-            <img class="object-cover w-3/4  " src="pictures/banner.png" alt="">
+        <div class="col-span-12 md:col-span-6 mt-[-80px] md:mt-0">
+            <img class="md:object-cover w-64 md:w-3/4 " src="pictures/banner.png" alt="">
         </div>
      </section>
 
     <!-- banner section end  -->
 
     <!-- logo section start  -->
-     <section class="container mx-auto grid grid-cols-12 gap-10 items-center mt-5">
+     <section class="container mx-auto grid grid-cols-12 gap-10 items-center mt-5 dark:text-white">
         <div class="col-span-3">
             <p class="border-r-2 pr-4">Pave your path to career success by gaining  a  professional  Google certificate with the support of C4U</p>
         </div>
         <div class="col-span-3">
-            <img class="border-r-2 pr-4 ps-8 object-cover w-56" src="pictures/Google.png" alt="google">
+            <img class="border-r-2 pr-4 ps-8 object-cover w-56 dark:bg-white" src="pictures/Google.png" alt="google">
         </div>
         <div class="col-span-3">
-            <img class="border-r-2 pr-4 object-cover " src="pictures/Work & Pensions.png" alt="work & pension">
+            <img class="border-r-2 pr-4 object-cover dark:bg-white" src="pictures/Work & Pensions.png" alt="work & pension">
         </div>
         <div class="col-span-3">
-            <img class="border-r-2 pr-4 object-cover w-56" src="pictures/logo.png" alt="logo image">
+            <img class="border-r-2 pr-4 object-cover w-56 dark:bg-white" src="pictures/logo.png" alt="logo image">
         </div>
     </section>
     <!-- logo section end  -->
 
      <!-- skill section start  -->
-      <section class="container mx-auto grid grid-cols-12 gap-3 mt-6">
+      <section class="container mx-auto grid grid-cols-12 gap-3 mt-6 dark:text-white">
         <div class="col-span-6 space-y-11 shadow-2xl rounded-md p-8">
             <h2 class="border-b-2 pb-3 font-bold">What you will learn</h2>
-            <div>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 border-2 m-[1px] w-10 h-10 rounded-full text-[#F44335] bg-[#F9CCC7]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+                  
                 <p>Gain skills required to succeed in an entry-level IT job</p>
             </div>
-            <div>
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 border-2 m-[1px] w-20 h-10 rounded-full text-[#F44335] bg-[#F9CCC7]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
                 <p class="font-semibold"> Learn to perform day-to-day IT support tasks including computer assembly, wireless networking, installing programs, and customer service</p>
             </div>
-            <div>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 border-2 m-[1px] w-20 h-10 rounded-full text-[#F44335] bg-[#F9CCC7]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
                 <p class="font-semibold">Learn how to provide end-to-end customer support, ranging from identifying problems to troubleshooting and debugging</p>
             </div>
-            <div>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 border-2 m-[1px] w-16 h-10 rounded-full text-[#F44335] bg-[#F9CCC7]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
                 <p class="font-semibold">Learn to use systems including Linux, Domain Name Systems, Command-Line Interface, and Binary Code</p>
             </div>
         </div>
@@ -139,7 +153,7 @@
      <!-- skill section end  -->
 
         <!-- job section start  -->
-        <section class="container mx-auto grid grid-cols-12 gap-3 mt-6">
+        <section class="container mx-auto grid grid-cols-12 gap-3 mt-6 dark:text-white">
             <div class="col-span-6 space-y-8 shadow-2xl rounded-2xl p-8">
                 <h2 class="border-b-2 pb-3 font-bold">Jobs Assocaited with Certificate </h2>
                 <div class="flex items-center gap-10">
@@ -220,7 +234,7 @@
          <!-- job section end  -->
 
          <!-- course section start  -->
-          <section class="container mx-auto flex items-center mt-10 gap-10 border-b-2 border-[#F9CCC7]">
+          <section class="container mx-auto flex items-center mt-10 gap-10 border-b-2 border-[#F9CCC7] dark:text-white">
             <div>
                 <h1 class="text-4xl font-bold pb-16">
                     There are 5 Courses in this <br> Professional Certificate
@@ -239,8 +253,30 @@
           </section>
          <!-- course section end -->
 
+         <!-- suppoert section start -->
+          <section class="container mx-auto space-y-20 py-7 md:mt-40">
+            <div>
+                <img class="object-fit w-full" src="pictures/course1.png" alt="">
+            </div>
+            <div>
+                <img class="object-fit w-full" src="pictures/course2.png" alt="">
+            </div>
+            <div class="">
+                <img class="object-fit w-full" src="pictures/course3.png" alt="">
+            </div>
+            <div>
+                <img class="object-fit w-full" src="pictures/course4.png" alt="">
+            </div>
+            <div>
+                <img class="object-fit w-full" src="pictures/course5.png" alt="">
+            </div>
+          </section>
+
+
+         <!-- suppoert section end -->
+
          <!-- footer section start  -->
-          <footer>
+          <footer class="">
             <section class="relative flex ps-20 items-center container mx-auto bg-[url('https://s3-alpha-sig.figma.com/img/898a/83bb/c6743181cc35f6236a07b4b6fb40d2b8?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aOzoXpnJPWOiBkggDzu9iMC9mARjLvqWRmPTNXwl~V6K43dZaoiM1O77FMm70MViAB2SQl1Tk1SadqPNc7HWRPX4hwqwOZeSnb1rY5CqbkIargHCDHuvWOpSY3S4aRHYfWknr434iiIPFuDq9Y4S3DeJhueaw-~Joy9Xi9LIpRJdltQlG-qnbjvdsZQtiqwnRqR3xcICOkP7OQDTRYpBDiE6VCMT-Xkr1IEF1eH1HJAb5Hk28CMhIP3xCSjbGWHTSE-Pj8w6~cT2ckb48sVY8Btl7VAAzPV4g8aV99CGKG08Fo-bJ4uFWLa-ggXTrkAUy6j1eRa60ieKVU0E6ZWWWg__')] bg-cover bg-center w-full h-[500px] ">
                 <div class="bg-white absolute w-1/3 p-8 rounded-lg h-72 space-y-6">
                     <img src="pictures/footer-icon.png" alt="">
@@ -249,49 +285,54 @@
                 </div>
             </section>
 
-            <section class="container mx-auto grid grid-cols-12 py-8">
-                <div class="col-span-4 space-y-3">
+            <section class="container mx-auto grid grid-cols-12 py-8 dark:text-white">
+                <div class="col-span-4 space-y-3 ">
                     <img class="w-24" src="pictures/logo.png" alt="">
-                    <p class="text-[#20484F] text-sm">Level39</p>
-                    <p class="text-[#20484F] text-sm">One Canada Square</p>
-                    <p class="text-[#20484F] text-sm">One Canadry warf</p>
-                    <p class="text-[#20484F] text-sm">London</p>
-                    <p class="text-[#20484F] text-sm">E145AB</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Level39</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">One Canada Square</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">One Canadry warf</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">London</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">E145AB</p>
                 </div>
                 <div class="col-span-2 space-y-3">
                     <h3 class="font-bold">Home</h3>
-                    <p class="text-[#20484F] text-sm">Collaborations</p>
-                    <p class="text-[#20484F] text-sm">Statistics</p>
-                    <p class="text-[#20484F] text-sm">How It Works </p>
-                    <p class="text-[#20484F] text-sm">Testimonials </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Collaborations</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Statistics</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">How It Works </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Testimonials </p>
                 </div>
                 <div class="col-span-2 space-y-3">
                     <h3 class="font-bold">About Us</h3>
-                    <p class="text-[#20484F] text-sm">Collaborations</p>
-                    <p class="text-[#20484F] text-sm">Statistics</p>
-                    <p class="text-[#20484F] text-sm">How It Works </p>
-                    <p class="text-[#20484F] text-sm">Testimonials </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Collaborations</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Statistics</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">How It Works </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Testimonials </p>
                 </div>
                 <div class="col-span-2 space-y-3">
                     <h3 class="font-bold">Upskill</h3>
-                    <p class="text-[#20484F] text-sm">Collaborations</p>
-                    <p class="text-[#20484F] text-sm">Statistics</p>
-                    <p class="text-[#20484F] text-sm">How It Works </p>
-                    <p class="text-[#20484F] text-sm">Testimonials </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Collaborations</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Statistics</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">How It Works </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Testimonials </p>
                 </div>
                 <div class="col-span-2 space-y-3">
                     <h3 class="font-bold">Contact Us </h3>
-                    <p class="text-[#20484F] text-sm">Collaborations</p>
-                    <p class="text-[#20484F] text-sm">Statistics</p>
-                    <p class="text-[#20484F] text-sm">How It Works </p>
-                    <p class="text-[#20484F] text-sm">Testimonials </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Collaborations</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Statistics</p>
+                    <p class="text-[#20484F] text-sm dark:text-white">How It Works </p>
+                    <p class="text-[#20484F] text-sm dark:text-white">Testimonials </p>
                 </div>
             </section>
           </footer>
          <!-- footer section end -->
 
 
-  
+  <script>
+    const htmlTag=document.getElementById('htmlTag');
+    document.getElementById('switch').addEventListener('click',function(){
+        htmlTag.classList.toggle('dark');
+    });
+  </script>
     
 </body>
 </html>
